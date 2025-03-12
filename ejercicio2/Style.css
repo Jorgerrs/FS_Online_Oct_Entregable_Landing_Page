@@ -1,78 +1,71 @@
-body{
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #4caf50;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-}
-
-main {
-    padding: 2em;
-    background: color #f4f4f4; ;
-}
-section {
-        margin: 2em 0;
-    }
-
-footer{
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-    position:fixed;
-    bottom: 0;
-    width: 100%;
-
-}
-
-@media (max-width:480px){
-    nav ul{
-        display: none;
-    }
-    nav select {
-        display: block;
-    }
-}
-
-nav select {
-    display: none;
-}
-
+/* Media queries */
 @media (max-width: 480px) {
-    nav ul {
-        display: none;
-    }
-    
-    nav select {
-        display: block;
-        width: 100%;
-        padding: 10px;
-        margin: 10px 0;
-    }
+    /* Menú del navbar como menú desplegable u oculto */
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        width: 200px;
-        position: absolute;
-        left: 0;
-        top: 50px;
-        background-color: #333;
-    }
-
-    nav ul li {
-        float: none;
-    }
-
-    nav ul li a {
-        padding: 14px 16px;
-    }
+    /* Menú en el lateral */
 }
+header {
+    z-index: 100;
+    display: flex;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+  padding: 0;
+}
+
+li{
+float: left;    
+padding: 20px;
+
+}
+a {
+    text-decoration:none;
+    color: green;
+}
+img {
+    height: 25px;
+    width: 100px;
+
+}
+.idioma{
+    background-color:brown ;
+    color: white;
+    padding: 10px;
+    border-radius: 20px 20px 20px 20px;
+    margin-left: 500px;
+}
+.main-content{
+    width: 100%;
+    height: 400px;
+    font-size: 16px;
+    min-height: 40.62em;
+    color: aliceblue;
+    background-image: url("../img/planet-skin-sevilla-p.jpg");
+    background-size: cover;
+    margin-bottom: 3.12em;
+    display: flex;
+    align-items: end;
     
+} 
+.container{
+    margin: 0 auto;
+    margin-bottom: 6.25em; 
+    
+}
+.boton{
+    background-color: brown;
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.87em;
+    color: black;
+    margin-top: 0.4em;
+    margin-right: 1.25;
+    cursor:pointer;
+    transition: .3s ease all;
+    font-size:1.12em;
+
+}
